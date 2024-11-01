@@ -28,7 +28,8 @@
   "features": {
     "bootmagic": true,
     "backlight": true,
-    "extrakey": true,
+    "nkro": true,
+    "extrakey": true
   },
   "matrix_pins": {
       "cols": ["B15", "B13", "B14", "B12", "B11", "B2", "B0", "B10", "B1", "B4", "B3", "B7", "B9", "B5", "B6", "B8"],
@@ -54,6 +55,10 @@
   },
   "backlight": {
       "driver": "pwm",
+      "default": {
+        "on": false
+      },
+      "levels": 7,
       "pin": "A8"
   },
   "layouts": {
