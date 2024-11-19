@@ -55,6 +55,7 @@
   },
   "backlight": {
       "driver": "pwm",
+      "max_brightness": 128,
       "pin": "A8"
   },
   "layouts": {
