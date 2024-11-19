@@ -1,6 +1,7 @@
 #include "quantum.h"
 
 void keyboard_pre_init_kb(void) {
+#if 0
     // The rev A/B and C boards have enough electrical incompatibilities that
     // it's dangerous to run firmware intended for one on the other. Check the
     // ident pins and force back into the bootloader if the rev is wrong.
@@ -38,6 +39,7 @@ void keyboard_pre_init_kb(void) {
                 break;
         }
     }
+#endif
 }
 
 bool dip_switch_update_mask_kb(uint32_t state) {
